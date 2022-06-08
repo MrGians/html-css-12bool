@@ -32,3 +32,9 @@ main section {margin-bottom: 50px;}
     justify-content: center;
 }
 
+
+/* Nested Section */
+#nested .row > [class^="col"] {
+    padding: 10px;
+}
+
