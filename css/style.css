@@ -9,10 +9,13 @@
 
 
 /*********** Generics ***********/
+main section {margin-bottom: 50px;}
+
 .row > [class^="col"] {
     background-color: var(--primary);
     color: var(--white);    
     border: 1px solid var(--white);
+    min-height: 50px;
 }
 
 .row .row [class^="col"] {
@@ -24,8 +27,8 @@
 /* Home Section */
 #home .row > [class^="col"] {
     padding: 10px;
-    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
