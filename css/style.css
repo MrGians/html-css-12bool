@@ -43,3 +43,9 @@ main section {margin-bottom: 50px;}
 #alignment .row .col {
     min-height: 100px;
 }
+
+
+/* Justify Content Section */
+#justify-content .row > [class^="col"] {
+    padding: 10px;
+}
