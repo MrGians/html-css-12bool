@@ -1,0 +1,44 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Palette Color */
+:root {
+  --skin: #F90;
+  --red: #F00;
+  --blue: #00F;
+  --brown: #783F04;
+}
+
+/* Bonus */
+.container-bonus {
+  width: 450px;
+  margin: 10px auto;
+  padding: 20px;
+
+  border: 10px solid black;
+}
+
+/* Pixel Height */
+.pixel {height: 35px;}
+
+/* BG-color Pixels */
+.red {background-color: var(--red);}
+.blue {background-color: var(--blue);}
+.brown {background-color: var(--brown);}
+.skin {background-color: var(--skin);}
+.white {background-color: white;}
+.black {background-color: black;}
+
+
+/* Credits */
+.credits {
+  text-align: right;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-shadow: 12px, 5px, 6px, black;
+}

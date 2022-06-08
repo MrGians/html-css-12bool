@@ -14,14 +14,16 @@
 [2.1] - Offset 
 [2.2] - Gutter 
 
-#3 | Flex
-[3.1] - Main Axis
-[3.2] - Secondary Axis
-[3.3] - Both Axis
+#3 | Display
 
-#4 | Padding & Margin
-[4.1] - Only X Axis
-[4.2] - Only Y Axis
+#4 | Flex
+[4.1] - Main Axis
+[4.2] - Secondary Axis
+[4.3] - Both Axis
+
+#5 | Padding & Margin
+[5.1] - Only X Axis
+[5.2] - Only Y Axis
 
 ***** INDICE ***** 
 */
@@ -56,11 +58,13 @@
   flex-basis: auto;
 }
 
+/* Generics Column */
 .row > .col {
   max-width: 100%;
   flex-grow: 1;
 }
 
+/* Columns from 1 to 12 */
 .row > .col-xs-1 {
   flex-basis: calc(100% / 12);
   max-width: calc(100% / 12);
@@ -102,8 +106,8 @@
 }
 
 .row > .col-xs-9 {
-  flex-basis: calc(100% / 12 * 9);
-  max-width: calc(100% / 12 * 9);
+  flex-basis: 75%;
+  max-width: 75%;
 }
 
 .row > .col-xs-10 {
@@ -131,7 +135,7 @@
 .offset-xs-6 {margin-left: 50%;}
 .offset-xs-7 {margin-left: calc(100% / 12 * 7);}
 .offset-xs-8 {margin-left: calc(100% / 12 * 8);}
-.offset-xs-9 {margin-left: calc(100% / 12 * 9);}
+.offset-xs-9 {margin-left: 75%;}
 .offset-xs-10 {margin-left: calc(100% / 12 * 10);}
 .offset-xs-11 {margin-left: calc(100% / 12 * 11);}
 .offset-xs-12 {margin-left: 100%;}
@@ -149,21 +153,28 @@
 .row.g-xs-3 > [class^="col"] {margin: 0 30px;}
 
 
-
-/*********** #3 | Flex ***********/
-.d-xs-block {display: block;}
+/*********** #3 | Display ***********/
 .d-xs-none {display: none;}
+.d-xs-block {display: block;}
+.d-xs-inline {display: inline;}
+.d-xs-inline-block {display: inline-block;}
 .d-xs-flex {display: flex;}
 
+
+
+/*********** #4 | Flex ***********/
+/* Flex Direction */
 .flex-xs-row-rev {flex-direction: row-reverse;}
 .flex-xs-col {flex-direction: column;}
 .flex-xs-col-rev {flex-direction: column-reverse;}
 
+/* Flex Wrap */
 .flex-xs-wrap {flex-wrap: wrap;}
 .flex-xs-nowrap {flex-wrap: nowrap;}
 .flex-xs-wrap-rev {flex-wrap: wrap-reverse;}
 
-/* [3.1] Main Axis */
+/* [4.1] Main Axis */
+/* Justify Content */
 .justify-xs-start {justify-content: flex-start;}
 .justify-xs-center {justify-content: center;}
 .justify-xs-end {justify-content: flex-end;}
@@ -172,13 +183,15 @@
 .justify-xs-between {justify-content: space-between;}
 .justify-xs-evenly {justify-content: space-evenly;}
 
-/* [3.2] Cross Axis */
+/* [4.2] Cross Axis */
+/* Align Items */
 .align-xs-start {align-items: flex-start;}
 .align-xs-center {align-items: center;}
 .align-xs-end {align-items: flex-end;}
 .align-xs-baseline {align-items: baseline;}
 .align-xs-stretch {align-items: stretch;}
 
+/* Align Content */
 .content-xs-start {align-content: flex-start;}
 .content-xs-center {align-content: center;}
 .content-xs-end {align-content: flex-end;}
@@ -188,6 +201,7 @@
 .content-xs-evenly {align-content: space-evenly;}
 .content-xs-stretch {align-content: stretch;}
 
+/* Align Self */
 .self-xs-start {align-self: flex-start;}
 .self-xs-center {align-self: center;}
 .self-xs-end {align-self: flex-end;}
@@ -195,12 +209,15 @@
 .self-xs-stretch {align-self: stretch;}
 
 /* [3.3] Both Axis */
+/* Flex Grow */
 [class^="col"].grow-xs-0 {flex-grow: 0;}
 [class^="col"].grow-xs-1 {flex-grow: 1;}
 
+/* Flex Shrink */
 [class^="col"].shrink-xs-0 {flex-shrink: 0;}
 [class^="col"].shrink-xs-1 {flex-shrink: 1;}
 
+/* Items Order */
 .order-xs--1 {order: -1;}
 .order-xs-0 {order: 0;}
 .order-xs-1 {order: 1;}
