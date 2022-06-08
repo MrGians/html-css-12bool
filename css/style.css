@@ -38,3 +38,8 @@ main section {margin-bottom: 50px;}
     padding: 10px;
 }
 
+
+/* Alignment Section */
+#alignment .row .col {
+    min-height: 100px;
+}
