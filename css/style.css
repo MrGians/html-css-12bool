@@ -3,9 +3,29 @@
     --white: #FFF;
     --grey: #999;
     --black: #000;
-    --primary: #;
-    --secondary: #;
+    --primary: #006CFA;
+    --secondary: #00E165;
 }
 
 
 /*********** Generics ***********/
+.row > [class^="col"] {
+    background-color: var(--primary);
+    color: var(--white);    
+    border: 1px solid var(--white);
+}
+
+.row .row [class^="col"] {
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+
+/* Home Section */
+#home .row > [class^="col"] {
+    padding: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

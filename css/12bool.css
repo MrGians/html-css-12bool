@@ -47,6 +47,7 @@
 .row {
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .row > [class^="col"] {
@@ -194,11 +195,11 @@
 .self-xs-stretch {align-self: stretch;}
 
 /* [3.3] Both Axis */
-.grow-xs-0 {flex-grow: 0;}
-.grow-xs-1 {flex-grow: 1;}
+[class^="col"].grow-xs-0 {flex-grow: 0;}
+[class^="col"].grow-xs-1 {flex-grow: 1;}
 
-.shrink-xs-0 {flex-shrink: 0;}
-.shrink-xs-1 {flex-shrink: 1;}
+[class^="col"].shrink-xs-0 {flex-shrink: 0;}
+[class^="col"].shrink-xs-1 {flex-shrink: 1;}
 
 .order-xs--1 {order: -1;}
 .order-xs-0 {order: 0;}
