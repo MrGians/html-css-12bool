@@ -1,0 +1,88 @@
+/*********** Reset ***********/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+***** INDICE ***** 
+
+#1 | Container
+
+#2 | Row & Columns
+[2.1] - Offset 
+[2.2] - Gutter 
+
+#3 | Flex
+[3.1] - Main Axis
+[3.2] - Secondary Axis
+[3.3] - Both Axis
+
+#4 | Padding & Margin
+[4.1] - Only X Axis
+[4.2] - Only Y Axis
+
+***** INDICE ***** 
+*/
+
+
+/*********** Utilities | Mobile First (View XS <576px) ***********/
+
+/*********** #1 | Container ***********/
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid{
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+
+/*********** #2 | Row & Columns ***********/
+
+
+/* [2.1] Offset */
+
+/* [2.2] Gutter */
+
+
+
+/*********** #3 | Flex ***********/
+
+/* [3.1] Main Axis */
+
+/* [3.2] Secondary Axis */
+
+/* [3.3] Both Axis */
+
+
+
+/*********** #4 | Padding & Margin ***********/
+
+/* [4.1] Only X Axis */
+
+/* [4.2] Only Y Axis */
+
+
+
+/*********** Media Query Responsive Layout ***********/
+
+/*********** Responsive View SM >= 576px ***********/
+@media screen and (min-width: 576px) {}
+
+/*********** Responsive View MD >= 768px ***********/
+@media screen and (min-width: 768px) {}
+
+/*********** Responsive View LG >= 992px ***********/
+@media screen and (min-width: 992px) {}
+
+/*********** Responsive View XL >= 1200px ***********/
+@media screen and (min-width: 1200px) {}
+
+/*********** Responsive View XXL >= 1400px ***********/
+@media screen and (min-width: 1400px) {}
